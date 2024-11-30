@@ -1,0 +1,251 @@
+svg {
+    width: 500px;
+    height: 500px;
+}
+
+mask path {
+    fill: none;
+    stroke: white;
+    stroke-width: 32;
+}
+
+.grid-container {
+    background: #000;
+    padding: 30px !important;
+}
+
+/* Warhol-style grid items */
+.grid-item:nth-child(1) {
+    background: #FF69B4; /* Hot pink */
+}
+.grid-item:nth-child(1) path[style*="mask"] {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.7));
+}
+.grid-item:nth-child(1) path:not([style*="stroke"]) {
+    fill: #FF1493 !important; /* Deep pink */
+}
+
+.grid-item:nth-child(2) {
+    background: #4169E1; /* Royal blue */
+}
+.grid-item:nth-child(2) path[style*="mask"] {
+    filter: sepia(100%) hue-rotate(180deg);
+}
+.grid-item:nth-child(2) path:not([style*="stroke"]) {
+    fill: #1E90FF !important; /* Dodger blue */
+}
+
+.grid-item:nth-child(3) {
+    background: #FFD700; /* Gold */
+}
+.grid-item:nth-child(3) path[style*="mask"] {
+    filter: hue-rotate(45deg);
+}
+.grid-item:nth-child(3) path:not([style*="stroke"]) {
+    fill: #FFA500 !important; /* Orange */
+}
+
+.grid-item:nth-child(4) {
+    background: #32CD32; /* Lime green */
+}
+.grid-item:nth-child(4) path[style*="mask"] {
+    filter: hue-rotate(90deg);
+}
+.grid-item:nth-child(4) path:not([style*="stroke"]) {
+    fill: #00FF00 !important; /* Lime */
+}
+
+.grid-item:nth-child(5) {
+    background: #FF4500; /* Orange red */
+}
+.grid-item:nth-child(5) path[style*="mask"] {
+    filter: contrast(150%) brightness(1.2);
+}
+.grid-item:nth-child(5) path:not([style*="stroke"]) {
+    fill: #FF6347 !important; /* Tomato */
+}
+
+.grid-item:nth-child(6) {
+    background: #9370DB; /* Medium purple */
+}
+.grid-item:nth-child(6) path[style*="mask"] {
+    filter: hue-rotate(270deg);
+}
+.grid-item:nth-child(6) path:not([style*="stroke"]) {
+    fill: #8A2BE2 !important; /* Blue violet */
+}
+
+.grid-item:nth-child(7) {
+    background: #00CED1; /* Dark turquoise */
+}
+.grid-item:nth-child(7) path[style*="mask"] {
+    filter: hue-rotate(150deg);
+}
+.grid-item:nth-child(7) path:not([style*="stroke"]) {
+    fill: #40E0D0 !important; /* Turquoise */
+}
+
+.grid-item:nth-child(8) {
+    background: #FF69B4; /* Hot pink */
+}
+.grid-item:nth-child(8) path[style*="mask"] {
+    filter: saturate(200%) brightness(1.1);
+}
+.grid-item:nth-child(8) path:not([style*="stroke"]) {
+    fill: #FF1493 !important; /* Deep pink */
+}
+
+.grid-item:nth-child(9) {
+    background: #FFD700; /* Gold */
+}
+.grid-item:nth-child(9) path[style*="mask"] {
+    filter: hue-rotate(30deg) saturate(150%);
+}
+.grid-item:nth-child(9) path:not([style*="stroke"]) {
+    fill: #DAA520 !important; /* Goldenrod */
+}
+
+/* Keep your existing animation CSS below */
+[id^="mask-0"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush1 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush1 {
+    0% {
+        stroke-dashoffset: 1024;
+    }
+    40% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-1"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush2 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush2 {
+    0%, 15% {
+        stroke-dashoffset: 1024;
+    }
+    55% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-2"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush3 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush3 {
+    0%, 30% {
+        stroke-dashoffset: 1024;
+    }
+    70% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-4"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush4 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush4 {
+    0%, 45% {
+        stroke-dashoffset: 1024;
+    }
+    85% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-5"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush5 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush5 {
+    0%, 50% {
+        stroke-dashoffset: 1024;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-3"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush6 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush6 {
+    0%, 55% {
+        stroke-dashoffset: 1024;
+    }
+    95% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-6"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush7 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush7 {
+    0%, 60% {
+        stroke-dashoffset: 1024;
+    }
+    95% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+[id^="mask-7"] path {
+    stroke-dasharray: 1024;
+    stroke-dashoffset: 1024;
+    animation: brush8 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes brush8 {
+    0%, 65% {
+        stroke-dashoffset: 1024;
+    }
+    95% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
