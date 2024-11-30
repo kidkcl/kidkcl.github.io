@@ -97,20 +97,20 @@ mask path {
 
 /* Keep your existing animation CSS below */
 [id^="mask-0"] path {
-    stroke-dasharray: 1024;
-    stroke-dashoffset: 1024;
-    animation: brush1 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: brush1 3s linear infinite;
 }
 
 @keyframes brush1 {
     0% {
+        stroke-dashoffset: 500;
+    }
+    15% {
         stroke-dashoffset: 1024;
     }
-    40% {
-        stroke-dashoffset: 0;
-    }
     100% {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 1024;
     }
 }
 
